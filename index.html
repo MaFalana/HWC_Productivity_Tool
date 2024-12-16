@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Productivity Tool - Decimal Degrees Converter</title>
+ 
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.2/css/halfmoon.min.css" rel="stylesheet" integrity="sha256-RjeFzczeuZHCyS+Gvz+kleETzBF/o84ZRHukze/yv6o=" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body class="bg-gradient bg-light">
+ 
+    <!-- Option 1: Bootstrap JS bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=" crossorigin="anonymous"></script>
+ 
+    <!-- Option 2: Separate Popper and Bootstrap JS
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=" crossorigin="anonymous"></script>
+    -->
+
+    
+            <div class="container ">
+              <div class="card">
+              <h2>DMS to DD Converter</h2>
+              <div class="row">
+                <div class ="col-6">
+                  <div class="card shadow">
+
+                  
+                  <div class ="row">
+                    <div class="input-group  mb-3">
+                      
+                      <input type="number" id="degrees" min="-18000" max="18000" step="0.0000001" class="form-control" placeholder="degrees" required>
+                      <span class="input-group-text">°</span>
+
+                      
+                      <input type="number" id="minutes" min="-6000" max="6000" class="form-control" placeholder="minutes" required> 
+                      <span class="input-group-text">'</span>
+
+                      
+                      <input type="number" id="seconds" min="0.000001" max="7200" step="0.000001" class="form-control" placeholder="seconds" required> 
+                      <span class="input-group-text">"</span>
+                    </div>
+
+              <div class ="row">
+                  <div class="input-group mb-3">
+
+                    <input type="number" id="degrees2" min="-18000" max="18000" step="0.0000001" class="form-control" placeholder="degrees" required>
+                    <span class="input-group-text">°</span>
+
+                    <input type="number" id="minutes2" min="-6000" max="6000" class="form-control" placeholder="minutes" required> 
+                    <span class="input-group-text">'</span>
+
+                    <input type="number" id="seconds2" min="0.000001" max="7200" step="0.000001" class="form-control" placeholder="seconds" required> 
+                    <span class="input-group-text">"</span>
+
+                  </div>
+                </div>
+                </div>
+
+                  <div class="row">
+                      <div class="input-group mb-3">
+
+                        <input type="number" name="elevation" id="elevation" class="form-control" placeholder="elevation" required>
+                      </div>
+                  </div>
+                </div>
+                </div>
+
+                
+
+                <div class ="col-6">
+                  <div class="card shadow">
+                    <div class="row">
+                    <h3 id="out-latitude">latitude</h3>
+                    
+                  </div>
+                  <div class="row">
+                    <h3 id="out-longitude">longitude</h3>
+                    
+                  </div>
+                  <div class="row">
+                    
+                    <h3 id="out-elevation" placeholder="New Elevation">elevation</h3>
+                  </div>
+                  </div>
+                  
+                </div>
+
+                
+                  
+              </div>
+            </div>
+  </div>
+              
+
+            
+
+  </body>
+</html>
